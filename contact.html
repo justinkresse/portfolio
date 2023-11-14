@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet"> 
+    <link rel="icon" type="image/x-icon" href="/images/favicon 1.ico">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <style>
+       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+        /* 
+        CONTACT FORM EXAMPLE FOR FORMCARRY
+
+        IMPORTANT NOTE:
+        PLEASE ADD formcarry-form class to your form element
+        to apply the styles.
+        */
+
+        .formcarry-container * {
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+
+        /* colors */
+        --color-blue: #000000;
+        --color-light-blue: #3d3d3d;
+        --color-gray: #e5e7eb;
+        --color-dark-gray: #9da3ae;
+        --color-pink: #edadd2;
+        }
+
+        .formcarry-container {
+        /* container */
+        --c-width: 50%;
+        --c-max-width: 500px;
+
+        width: var(--c-width);
+        max-width: var(--c-max-width);
+        display: block;
+        margin: 10vh auto 0 auto;
+        }
+
+        .formcarry-form label {
+        display: block;
+        padding: 12px 0 2px 0;
+        letter-spacing: -0.2px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        }
+
+        .formcarry-form input,
+        .formcarry-form textarea {
+        font-size: 16px;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: var(--color-gray);
+        border: none;
+        border: 4px solid var(--color-gray);
+        outline: none;
+        border-radius: 8px;
+        color: var(--color-dark-gray);
+        }
+
+        .formcarry-form input:focus,
+        .formcarry-form textarea:focus {
+        background-color: #fff;
+        color: var(--color-dark-gray);
+        }
+
+        .formcarry-form input:focus:required:invalid {
+        border-color: var(--color-pink);
+        background-color: #fff;
+        }
+
+        .formcarry-form button {
+        display: block;
+        margin-top: 12px;
+        width: 100%;
+        padding: 12px 20px;
+        border-radius: 8px;
+            border-color: transparent;
+        background-color: var(--color-blue);
+        color: #fff;
+        font-weight: 700;
+        font-size: 18px;
+
+        transition: 300ms all;
+        }
+
+        .formcarry-form button:hover {
+        background-color: var(--color-light-blue);
+        }
+
+        .formcarry-alert {
+        padding: 12px;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 12px;
+        display: none;
+        }
+
+        .formcarry-alert.visible {
+        display: block;
+        }
+
+        .formcarry-alert.success {
+        background: #69cf9d;
+        }
+
+        .formcarry-alert.error {
+        background: #de524c;
+        }
+    </style>
+</head>
+<body style="min-height: 100%;">
+    <header id="header" class="inline center" style="z-index: 2; padding-bottom: 1em; padding-top: .5em;">
+        <div>
+            <h1 style="padding-bottom: 0.15em;"><a rel="link" href="/index.html">Justin Kresse Design</a></h1>
+            <h2><ul style="display: flex; justify-content: center;">
+                <li><a rel="link" href="/photography.html">Photography</a></li>
+                <li><a rel="link" href="/files/Justin Kresse Resume 2023.pdf">Resume</a></li>
+                <li><a rel="link" href="#">Contact</a></li>
+            </ul></h2>
+        </div>
+    </header>
+
+    <section id="form">
+        <div class="formcarry-container" style="margin-top: 110px; margin-bottom: 8em;">
+            <form action="form-process.php" method="POST" class="formcarry-form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="fullName" required />
+    
+            <label for="email">Your Email Address</label>
+            <input type="email" id="email" name="email" required />
+    
+            <label for="message">Your Message</label>
+            <textarea name="message" id="message" cols="30" rows="6"></textarea>
+    
+            <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="Contact" class="padsides" style="background: hsl(0, 50%, 50%); padding-top: 1em; padding-bottom: 1em; position: fixed; bottom: 0; width: 100%;">
+        <div class="container">
+            <div class="product-grid">
+                <div class="card stacked">
+                    <a href="mailto:justinkresse@mail.adelphi.edu" class="flexftr">
+                        <img src="/images/icons8-email-96.png" width="30em" height="auto" style="padding-right: .5em;">
+                        <p style="color: #fff;">justinkresse@mail.adelphi.edu</p>
+                    </a>
+                </div>
+                <div class="card stacked">
+                    <a href="/files/Justin Kresse Resume 2023.pdf" class="flexftr">
+                        <img src="/images/icons8-resume-96.png" width="30em" height="auto" style="padding-right: .3em;">
+                        <p style="color: #fff;">Resume</p>
+                    </a>
+                </div>
+                <div class="card stacked">
+                    <a href="https://www.instagram.com/justinkressedesign/" class="flexftr">
+                        <img src="/images/icons8-instagram-96.png" width="30em" height="auto" style="padding-right: .3em;">
+                        <p style="color: #fff;">Instagram</p>
+                    </a>
+                </div>
+                <div class="card stacked">
+                    <a href="https://www.thedelphianau.com/" class="flexftr">
+                        <img src="/images/icons8-newspaper-96.png" width="30em" height="auto" style="padding-right: .5em;">
+                        <p style="color: #fff;">Delphian Newspaper</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
